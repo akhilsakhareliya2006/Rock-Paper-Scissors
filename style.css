@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(135deg, #1d2b64, #f8cdda);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.choice {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 0.3s ease;
+  background-color: #ffffff10;
+  cursor: pointer;
+}
+
+.choice:hover {
+  transform: scale(1.1);
+  background-color: #ffffff25;
+}
+
+.choice img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.choice p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.score p:first-child {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.msg-container {
+  margin-top: 2rem;
+}
+
+#msg {
+  display: inline-block;
+  background-color: #081b31;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s;
+}
